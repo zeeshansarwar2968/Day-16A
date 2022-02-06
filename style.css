@@ -1,0 +1,37 @@
+/* importing font-awesome data */
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before { 
+  content: "\f005"; /* Star font from Font-Awesome to replace the radio default buttons */
+  margin: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 2em;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+
+.starrating > label
+{
+  color: #222222; /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; }  /* Start color when clicked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Start color when cursor is hovered */
+
+.star{
+    color:red;
+    }
+
+
+.hideData{
+    display: hidden;
+    visibility:hidden;
+}
